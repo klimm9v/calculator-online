@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online-calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Online-calculator</h1>
+        <div class="link-block">
+            <a href="{{ url_for('multiply') }}" target="_blank" class="link-item" >Умножить</a>
+        </div>
+        <div class="link-block">
+            <a href="{{ url_for('divide') }}" target="_blank" class="link-item">Делить</a>
+        </div>
+        <div class="link-block">
+            <a href="{{ url_for('fold') }}" target="_blank" class="link-item">Сложить</a>
+        </div>
+        <div class="link-block">
+            <a href="{{ url_for('subtract') }}" target="_blank" class="link-item">Вычитать</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p><a href="{{ url_for('rules') }}" target="_blank">© Все права защищены 2024</a>
+            <br><span style="color: red;">Powered by</span>&nbsp<a href="https://github.com/klimm9v">Khabib Shahbanov</a>
+        </div>
+    </footer>
+    
+    
+</body>

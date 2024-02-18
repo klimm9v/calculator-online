@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'DM Serif Display';
+    src: url('путь_к_вашему_шрифту.ttf') format('truetype');
+}
+
+body {
+    font-family: 'DM Serif Display', serif;
+    background-color: #464d4d;
+}
+
+h1, p {
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+
+span.black-text {
+    color: red; /* черный цвет текста */
+}
+
+.home-button {
+    top: 10px;
+    left: 10px; /* Изменено с right на left */
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-button:hover {
+    background-color: #4CAF50; 
+}
